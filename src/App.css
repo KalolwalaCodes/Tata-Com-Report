@@ -1,0 +1,122 @@
+.navbar-main{
+  border-bottom: 1px solid rgba(233, 236, 238, 0.6);
+  position: relative;
+}
+.tata-com-main-logo{
+  position: absolute;
+  left: 1%;
+  top: 30%;
+  width: 300px;
+}
+.tata-com-main-logo-parent{
+  position: absolute;
+  right: 1%;
+  top: 10%;
+  width: 50px;
+}
+.dropdown-tab{
+  position: relative;
+  z-index: 1;
+}
+.abs-pos-rotate{
+width: 30px;
+position: absolute;
+height: 30px;
+left: 50%;
+top: 100%;
+transform: translateX(-50%) rotate(45deg);
+background: rgb(233, 230, 230);
+box-shadow: 4px 6px 2px rgba(23, 22, 22, 0.6);
+z-index: -2;
+}
+.dropdown-content-main-wrapper{
+  position: absolute;
+  top: 160%;
+  background: rgb(231, 228, 228);
+  left: 50%;
+  padding: 10px;
+  transform: translateX(-50%);
+  box-shadow: 2px 3px 2px rgb(93, 90, 90,0.6);
+  z-index: 2;
+}
+.helper-ddp{
+  position: absolute;
+  top: 110%;
+  width: 150px;
+  background: red;
+  height: 200px;
+  opacity: 0;
+}
+.list-items:hover{
+ text-decoration: underline;
+}
+/* .bg-red-sz{
+  background: red;
+} */
+/* rishikesh style */
+
+canvas {
+  display: block;
+}
+
+
+.app-container {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  position: relative;
+  /* margin-top: 2%; */
+  display: flex;
+  /* height: 100vh; */
+  justify-content: end; /* Centers the scene horizontally */
+  align-items: center; /* Centers the scene vertically */
+}
+
+.app-container .cover-subtitle{
+  position: absolute;
+  color: #123c61;
+  font-weight: 900;
+  left: 1%;
+  bottom: 2%;
+}
+  .app-container .re{
+  position: absolute;
+  font-weight: 900;
+  left: 29%;
+  color: #123c61;
+  top: 50%;
+  font-size: 90px;
+  transform: translate(-100%, -50%);
+  z-index: 1;
+}
+.scene-container {
+  width: 70%; /* Takes 70% of the viewport width */
+  cursor: pointer;
+  height: 100%; /* Takes full height of the viewport */
+  position: relative; /* Allows positioning children relative to this container */
+  background-color: #e87625; /* Optional: Sets a black background */
+  overflow: hidden; /* Prevents overflow of particles outside this container */
+}
+.scene-container .imagine{
+  font-size: 90px;
+  color: white;
+  font-weight: 900;
+  position: absolute;
+  left: 1%;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+
+
+.main-container-navbar-parent {
+  position: relative; /* Ensure this has a relative position to contain the sticky element */
+}
+
+.main-container-navbar-parent {
+  position: relative;
+  /* top: 0; */
+z-index: 1000;  /*  Ensure it's above other elements */
+  background-color: white; /* Optional: Add background color for visibility */
+}
+
+
