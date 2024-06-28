@@ -7,3 +7,16 @@
     padding: 0;
     
 }
+:root{
+    --Big-heading:30px;
+    --big-heading-max:60px;
+    --medium-heading:28px;
+    --small-heading:26px;
+    --l-small-heading:24px;
+    --md-small-heading:22px;
+    --sm-small-heading:20px;
+    --normal-text:20px;
+    --medium-text:18px;
+    --sm-text:16px;
+    --l-text-main:22px;
+}

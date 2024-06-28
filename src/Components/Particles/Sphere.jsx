@@ -15,7 +15,7 @@ const SphereParticles = () => {
   const groupRef = useRef();
   const particles = [];
 
-  const numParticles = 500;
+  const numParticles = 1800;
   const radius = 2;
 
   for (let i = 0; i < numParticles; i++) {
@@ -32,7 +32,7 @@ const SphereParticles = () => {
 
   useFrame(() => {
     if (groupRef.current) {
-      groupRef.current.rotation.y += 0.001;
+      groupRef.current.rotation.y += 0.003;
     }
   });
 
@@ -46,17 +46,17 @@ const SphereParticles = () => {
 const Scene = () => {
   return (
     <>
-      <ambientLight intensity={0.9} />
-      <pointLight position={[5, 5, 5]} />
+      <ambientLight intensity={100} />
+      <pointLight position={[1, 1, 1]} intensity={1} />
       <SphereParticles />
     </>
   );
 };
 
-export default function App() {
+export default function Sphere() {
   return (
-    <div style={{ height: '100vh', width: '100vw', backgroundColor: 'black' }}>
-      <Canvas>
+    <div style={{ width:"100%", height:"80vh", backgroundColor: 'transparent' }}>
+      <Canvas className='canvas-sphere' >
         <Scene />
       </Canvas>
     </div>

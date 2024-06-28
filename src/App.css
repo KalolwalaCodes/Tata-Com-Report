@@ -118,5 +118,28 @@ canvas {
 z-index: 1000;  /*  Ensure it's above other elements */
   background-color: white; /* Optional: Add background color for visibility */
 }
+.section002{
+  background: linear-gradient(to right,#874287,#5e4c85);
+}
+.heading-tag-bigger{
+  position: relative;
+  font-size: 100px;
+  color: white;
+  /* -webkit-text-stroke: 2px #ffffff; */
+}
+.canvas-sphere{
+  width: 100% !important;
+  height: 100% !important;
+  position: absolute !important;
+  right: 15%;
+  top: -9%;
 
+  /* background: #000; */
+}
+.orange-heading-tag{
+  font-size: 50px;
+  font-weight: 700;
+  color: #f48221;
+  text-shadow: 2px 3px 2px rgb(69, 25, 94);
 
+}
