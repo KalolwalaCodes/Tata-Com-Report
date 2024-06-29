@@ -1,11 +1,10 @@
 import React, { useRef, useState, useEffect } from 'react';
 import { Canvas, useFrame, useThree } from '@react-three/fiber';
-import { motion, useInView } from 'framer-motion';
+import { motion } from 'framer-motion';
 import * as THREE from 'three';
 
-const Particle = ({ position, targetPosition, transition }) => {
+const Particle = React.memo(({ position, targetPosition, transition }) => {
   const mesh = useRef();
-  const isInview=useInView(mesh,{margin:"100px"})
   const initialPosition = useRef(position.clone());
   const [isTransitioning, setTransitioning] = useState(false);
   const driftOffset = useRef(new THREE.Vector3(
@@ -22,15 +21,13 @@ const Particle = ({ position, targetPosition, transition }) => {
 
   useFrame(() => {
     if (!isTransitioning && mesh.current) {
-      console.log("if condition called again")
       const time = Date.now() * 0.0005;
       const amplitude = 0.1;
       mesh.current.position.x = initialPosition.current.x + Math.sin(time + driftOffset.current.x) * amplitude;
       mesh.current.position.y = initialPosition.current.y + Math.cos(time + driftOffset.current.y) * amplitude;
       mesh.current.position.z = initialPosition.current.z + Math.sin(time * 0.5 + driftOffset.current.z) * amplitude;
-    } else if (isTransitioning && mesh.current ) {
+    } else if (isTransitioning && mesh.current) {
       mesh.current.position.lerp(targetPosition, 0.02);
-      console.log("else condition called again")
     }
   });
 
@@ -40,10 +37,9 @@ const Particle = ({ position, targetPosition, transition }) => {
       <meshStandardMaterial color={'#ffffff'} />
     </mesh>
   );
-};
+});
 
 const Particles = ({ stage }) => {
-  console.log("i'm being called this many time",);
   const particles = [];
   const sphereRadius = 1;
   const spherePoints1 = useRef([]);
@@ -51,7 +47,6 @@ const Particles = ({ stage }) => {
 
   useEffect(() => {
     // Generate points for sphere1
-    console.log("this 1 use effect being called");
     for (let i = 0; i < 2000; i++) {
       const theta = Math.random() * 2 * Math.PI;
       const phi = Math.acos(2 * Math.random() - 1);
@@ -69,10 +64,8 @@ const Particles = ({ stage }) => {
 
   const getTargetPosition = (i) => {
     if (stage === 1) {
-      console.log("i'm being sent stage 1 time");
       return spherePoints1.current[i];
     } else if (stage === 2) {
-      console.log("i'm being sent stage 2 time");
       return spherePoints3.current[i];
     }
   };
@@ -89,6 +82,7 @@ const Particles = ({ stage }) => {
 
 const Scene = ({ stage }) => {
   const { camera } = useThree();
+
   useEffect(() => {
     camera.position.set(0.5, 0, 2.2); // Shift the camera to the left
   }, [camera]);

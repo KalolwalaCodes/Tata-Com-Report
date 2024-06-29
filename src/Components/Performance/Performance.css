@@ -1,0 +1,130 @@
+.general-container {
+  display: flex;
+  height: 65vh;
+  margin: 0 auto;
+  max-width: 100%;
+  width: 75vw;
+}
+
+.radio {
+  display: none;
+}
+
+.content {
+  border-radius: 1rem;
+  cursor: pointer;
+  flex: 1;
+  margin-right: 0.8rem;
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
+  transition: all 0.7s cubic-bezier(0.05, 0.61, 0.41, 0.95);
+  background-repeat: no-repeat; /* Ensure background image does not repeat */
+}
+
+.content:hover {
+  box-shadow: 0.3rem 0.3rem 0.4rem rgba(0, 0, 0, 0.3);
+}
+
+.icon {
+  align-items: center;
+  background-color: var(--white);
+  border-radius: 50%;
+  bottom: 1rem;
+  color: var(--golden-tainoi);
+  display: flex;
+  font-size: 1.5rem;
+  height: 2.5rem;
+  justify-content: center;
+  left: 1.1rem;
+  position: absolute;
+  width: 2.5rem;
+}
+
+.card-title {
+  color: var(--white);
+  display: flex;
+  width: fit-content;
+  font-size: 25px;
+  color: white;
+  font-weight: 700;
+  position: absolute;
+  bottom: 10rem; /* Adjust vertical position as needed */
+  right: -100%;
+  opacity: 1; /* Start with opacity 0 */
+  transform: rotate(-90deg); /* Initial rotation and move out of view */
+  transition: opacity 0.7s ease-in-out; /* Smooth transition for visibility */
+  pointer-events: none; /* Prevent interaction when not visible */
+  white-space: nowrap; /* Ensure text does not wrap */
+}
+
+.radio:checked + .content {
+  border-radius: 1rem;
+  box-shadow: 0.3rem 0.3rem 0.4rem rgba(0, 0, 0, 0.3);
+  flex: 10;
+}
+
+.radio:checked + .content > .card-title {
+  opacity: 1;
+  transform: rotate(0deg); /* Return to normal rotation and position */
+  left: 2rem; /* Adjust horizontal position as needed */
+  font-size: 46px;
+  bottom: 1rem; /* Adjust vertical position as needed */
+}
+
+.callouts {
+  /* display: flex; */
+  width: 70%;
+  height: 100%;
+  opacity: 0;
+  text-align: left;
+  background-image: linear-gradient(to right, rgb(0, 0, 0, 0.4), transparent);
+  padding: 2rem;
+  transition: opacity 1s ease-in-out 0.7s; /* Add delay to match card expansion */
+}
+.callouts h4{
+  color: whitesmoke;
+  font-size: 22px;
+  font-weight: 700;
+  margin: 0 1%;
+}
+
+.callout-row {
+  display: flex;
+  text-align: left;
+  flex-wrap: wrap; /* Ensure items wrap to next line */
+  align-items: center;
+}
+
+.callout {
+  text-align: left;
+  display: flex;
+  /* border: 2px solid white; */
+  flex-direction: column;
+  width: 27%;
+  height: 45%;
+  margin: 1%;
+}
+
+.callout h3 {
+  color: whitesmoke;
+  font-size: 42px;
+  font-weight: 700;
+}
+
+.callout p {
+  color: whitesmoke;
+  font-size: 20px;
+  white-space: pre-line;
+  font-weight: 500;
+}
+
+.callout span {
+  color: rgb(226, 225, 225);
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.radio:checked + .content > .callouts {
+  opacity: 1;
+}
