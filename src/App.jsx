@@ -4,6 +4,8 @@ import './App.css'
 import Navbar from './Navbar/Navbar'
 import Example from './Navbar/Dev'
 import Homepage from './Pages/Home/Homepage';
+import MdMessage from './Pages/Mdmessage/MdMessage';
+import YearAtGlance from './Pages/Home/Smallpages/YearAtGlance';
 
 function App() {
 
@@ -11,8 +13,9 @@ function App() {
     <>
      <Navbar/>
      {/* <Example/>  */}
-     <Homepage/>
-     <div className='h-screen w-full'>hii</div>
+     {/* <Homepage/> */}
+     {/* <MdMessage/> */}
+     <YearAtGlance/>
     </>
   )
 }
