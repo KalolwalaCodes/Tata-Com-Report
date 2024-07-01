@@ -154,6 +154,12 @@ z-index: 1000;  /*  Ensure it's above other elements */
 .text-navy{
   color: #123c61;
 }
+.text-blue{
+  color: #3d85c6;
+}
+.bg-blue{
+  background-color: #3d85c6;
+}
 .text-light{
   color: #ffff;
 }

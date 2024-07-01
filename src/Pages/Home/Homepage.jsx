@@ -8,12 +8,14 @@ import About from '../../Components/About/About';
 import Performance from '../../Components/Performance/Performance';
 import Stakeholders from '../../Components/Stakeholders/Stakeholders';
 import CapsTemplate from '../../Components/CapsTemplate/CapsTemplate';
+import FinancialCapital from '../FinancialCapital/FinancialCapital';
 
 
 const Homepage = () => {
   const texts = ['Imagine', 'Design', 'Position']; // Array of texts to cycle through
   const [textIndex, setTextIndex] = useState(0); // State to track current text index
   const [cycleComplete, setCycleComplete] = useState(false); // State to track if the cycle is complete
+
 
   useEffect(() => {
     if (cycleComplete) return; // Stop the effect if the cycle is complete
@@ -41,6 +43,8 @@ const Homepage = () => {
       clearInterval(textTimer);
     };
   }, [cycleComplete, texts.length]);
+
+ 
   return (
     <div className='w-full'>
       <div className="app-container">
@@ -93,9 +97,10 @@ const Homepage = () => {
 
       <h2 className='h2 text-navy'>Our stakeholders</h2>
       <Stakeholders />
-      <CapsTemplate src={'./CapsTemplate/FCaps.jpg'} title={"Financial"} />
       {/* *************************** */}
     </div>
+    <FinancialCapital/>
+
     </div>
 
   )
