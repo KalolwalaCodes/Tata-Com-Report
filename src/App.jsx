@@ -6,6 +6,8 @@ import Example from './Navbar/Dev'
 import Homepage from './Pages/Home/Homepage';
 import MdMessage from './Pages/Mdmessage/MdMessage';
 import YearAtGlance from './Pages/Home/Smallpages/YearAtGlance';
+import About from './Components/About/About';
+import Footer from './Components/Footer/Footer';
 
 function App() {
 

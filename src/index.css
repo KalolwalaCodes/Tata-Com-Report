@@ -8,7 +8,8 @@
     
 }
 :root{
-    --Big-heading:30px;
+    --Big-heading:36px;
+    --xl-heading:42px;
     --big-heading-max:60px;
     --medium-heading:28px;
     --small-heading:26px;

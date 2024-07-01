@@ -1,0 +1,44 @@
+.footer {
+    background-color: black;
+    padding: 1%;
+    color: white;
+  }
+  
+  .marginal-footer {
+    width: 86%;
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap; /* Ensure items wrap to next line on smaller screens */
+    margin: auto;
+  }
+  
+  /* Media query for tablets */
+  @media (max-width: 768px) {
+    .marginal-footer {
+      flex-direction: column; /* Stack items vertically on smaller screens */
+      align-items: center;
+      text-align: center;
+    }
+  
+    .marginal-footer > * {
+      width: 100%; /* Make each child take full width */
+      margin-bottom: 1rem; /* Add spacing between items */
+    }
+  }
+  
+  /* Media query for mobile devices */
+  @media (max-width: 480px) {
+    .footer {
+      text-align: center;
+      padding: 2%; /* Increase padding for better touch targets */
+    }
+  
+    .marginal-footer {
+      width: 95%; /* Reduce width to fit better on small screens */
+    }
+  
+    .marginal-footer > * {
+      margin-bottom: 0.5rem; /* Adjust spacing for smaller screens */
+    }
+  }
+  

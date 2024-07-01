@@ -164,3 +164,41 @@ z-index: 1000;  /*  Ensure it's above other elements */
   font-size: 22px;
   font-weight: 200;
 }
+/* ***************************************** */
+.marginal{
+  width: 86%;
+  margin: auto;
+}
+.text-orange{
+  color:#e87625
+}
+.text-navy{
+  color: #123c61;
+}
+.text-blue{
+  color: #3d85c6;
+}
+.bg-blue{
+  background-color: #3d85c6;
+}
+.text-light{
+  color: #ffff;
+}
+.h2{
+  font-weight: 700;
+  font-size:var(--Big-heading);
+}
+.h-xl{
+  font-weight: 700;
+  /* color: #0000; */
+  font-size:var(--xl-heading);
+}
+.smh{
+  font-weight: 700;
+  font-size: var(--medium-heading); 
+}
+.bg-green-grad{
+  background-image: linear-gradient(40deg, #aab63a, #2d8089);
+  /* 1 #aab63a */
+  /* 2 #2d8089 */
+}
