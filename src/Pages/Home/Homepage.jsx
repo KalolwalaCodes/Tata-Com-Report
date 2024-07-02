@@ -9,6 +9,7 @@ import Performance from '../../Components/Performance/Performance';
 import Stakeholders from '../../Components/Stakeholders/Stakeholders';
 import CapsTemplate from '../../Components/CapsTemplate/CapsTemplate';
 import FinancialCapital from '../FinancialCapital/FinancialCapital';
+import MfdIntelCapital from '../MfdIntelCapital/MfdIntelCapital';
 
 
 const Homepage = () => {
@@ -100,7 +101,7 @@ const Homepage = () => {
       {/* *************************** */}
     </div>
     <FinancialCapital/>
-
+    <MfdIntelCapital/>
     </div>
 
   )
