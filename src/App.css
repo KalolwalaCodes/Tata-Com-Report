@@ -143,6 +143,27 @@ z-index: 1000;  /*  Ensure it's above other elements */
   text-shadow: 2px 3px 2px rgb(69, 25, 94);
 
 }
+.big-normal-heading-blue{
+  font-size: 30px;
+  color: #113d60;
+  font-weight: 600;
+}
+.dark-blue-head{
+  color: #113d60;
+  font-size: 24px;
+}
+.light-blue-head{
+  color:#3c85c6;
+  font-size: 22px;
+}
+.normal-text-container{
+  font-size: 18px;
+  color: rgb(69, 67, 67);
+}
+.text-bold-container{
+  font-size: 22px;
+  font-weight: 200;
+}
 /* ***************************************** */
 .marginal{
   width: 86%;
