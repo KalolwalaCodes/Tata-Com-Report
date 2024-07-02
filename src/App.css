@@ -178,6 +178,12 @@ z-index: 1000;  /*  Ensure it's above other elements */
 .text-blue{
   color: #3d85c6;
 }
+.text-mfd{
+  color: #2d8089;
+}
+h1{
+  white-space: pre-line;
+}
 .bg-blue{
   background-color: #3d85c6;
 }

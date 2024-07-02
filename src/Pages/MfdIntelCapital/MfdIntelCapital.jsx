@@ -1,23 +1,30 @@
 import React from 'react'
 import CapsTemplate from '../../Components/CapsTemplate/CapsTemplate';
 
-const FinancialCapital = () => {
+const MfdIntelCapital = () => {
   const values = [
-    { val1: '₹20,969 crores', val2: 'Revenue from Operations' },
-    { val1: '₹4,453 crores', val2: 'Employee wages and benefits' },
-    { val1: '₹476 crores', val2: 'Dividend' },
-    { val1: '₹4,230 crores', val2: 'EBITDA' },
+    { val1: '2,00,000+ km ', val2: 'extensive terrestrial fiber' },
+    { val1: '5,00,000+ km ', val2: 'round-the-globe sub- sea optical fiber' },
+    { val1: '229', val2: 'Total number of issued patents ' },
+    { val1: '92', val2: 'Trademarks (active registrations)' },
   ];
   return (
     <div>
-      <CapsTemplate src={'./CapsTemplate/FCaps.jpg'} title={"Financial"} values={values} theme={"#3d85c6"} gradient={"#376479"} ico={"./Homepage/fin-icon1.svg"} />
+      <CapsTemplate src={'./CapsTemplate/MCaps.jpg'} title={"Manufactured\u000aand Intellectual"} values={values} theme={"#42b3bd"} gradient={"#42b3bd"} ico={"./Homepage/mfd-icon2.svg"} />
       <div className='marginal my-10'>
-        <p className='text-blue text-2xl font-semibold'>
-          Our financial strength, built on a healthy balance sheet and consistent cash flow generation, fuels our strategic growth plans. With prudent investments, mergers and acquisitions, we have delivered strong revenue growth led by the data portfolio. It not only positions us to strengthen the digital fabric of a hyperconnected future but also provides the necessary impetus for capitalising on emerging opportunities.
+        <p className='text-mfd text-2xl font-semibold'>
+        As a leading CommTech player, we are reimagining and elevating our offerings in a manner that can uniquely empower hyperconnected ecosystems in a dynamic operating environment. We are pushing the envelope of R&D-driven innovation to develop value-added solutions tailored to meet diverse client needs.
         </p>
-        <h4 className='font-semibold my-5 text-xl text-navy'>Accelerating Growth</h4>
-        <div className='flex flex-wrap justify-between'>
-          <div className='w-full md:w-[49%]  mr-2'>
+        <h4 className='font-semibold my-3 text-xl text-navy'>A bird’s eye view into our digital fabric of solutions</h4>
+        <p className='text-center'>A <b>Hyperconnected Ecosystem</b> is one where people and machines effectively connect and communicate seamlessly, on a <br />real-time basis. It is characterised by:</p>
+        <div className='flex flex-wrap justify-between p-2'>
+            <img src="./capitals/mfd/mf1.png" className='w-[23%]' alt="" />
+            <img src="./capitals/mfd/mf2.png" className='w-[23%]'alt="" />
+            <img src="./capitals/mfd/mf3.png" className='w-[23%]' alt="" />
+            <img src="./capitals/mfd/mf4.png" className='w-[23%]' alt="" />
+        </div>
+        <div className='flex flex-wrap  justify-between'>
+          <div className='w-full md:w-[49%] '>
             <p>We are in an exciting phase of driving growth through investment for Tata Communications. The financial fitness we have attained in the recent past has given us room to fund the next phase of our journey while remaining financially fit. The strategic theme around our growth plan guides us to stitch the right capabilities for accelerated growth – Product to Platform to Digital Fabric of Solutions thereby increasing our relevance quotient.</p>
             <h4 className='font-semibold text-blue my-5 text-xl'>Our strategic pillars</h4>
             <div>
@@ -124,4 +131,4 @@ const FinancialCapital = () => {
   )
 }
 
-export default FinancialCapital
+export default MfdIntelCapital
