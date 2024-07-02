@@ -1,10 +1,26 @@
 import React, { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 
-const DropDownTab = ({ name }) => {
+const DropDownTab = ({ name,links }) => {
   console.log("here is name ", name);
   const dataSetOfDropdown = {
-    "Integrated Report": ['Integrated Report', 'dummyContent2', 'dummyContent2', 'dummyContent2', 'dummyContent2', 'dummyContent2'],
+    "Integrated Report": ['Integrated Report', 'Message from MD and CEO',
+    'Year at a Glance',
+    'Reimagining, redefining and revolutionising',
+    'value creation',
+    'Charting our way forward with all stakeholders',
+    'Addressing material issues, growing long-term value',
+    'Corporate details',
+    'Financial Capital',
+    'Manufactured and Intellectual Capital',
+    'Revolutionising Innovation ',
+    'Our ESG strategy',
+    'Natural Capital',
+    'Human Capital',
+    'Social and Relationship Capital',
+    'Risk management',
+    'Reliable governance for responsible value creation',
+    'Board of Directors'],
     "Statutory Reports": ['Statutory Reports', 'dummyContent3', 'dummyContent3', 'dummyContent3', 'dummyContent3'],
     "Financial Statements": ['Financial Statements', 'dummyContent4', 'dummyContent4', 'dummyContent4', 'dummyContent4']
   };
@@ -12,14 +28,14 @@ const DropDownTab = ({ name }) => {
 
   return (
     <div className="flex h-[30px] justify-center px-3 align-middle z-20">
-      <FlyoutLink href="#" FlyoutContent={DropdownContent} data={dataSetOfDropdown[name]}>
+      <FlyoutLink href="#" FlyoutContent={DropdownContent} data={dataSetOfDropdown[name]} links={links}>
         {dataSetOfDropdown[name][0]}
       </FlyoutLink>
     </div>
   );
 };
 
-const FlyoutLink = ({ children, href, FlyoutContent, data }) => {
+const FlyoutLink = ({ children, href, FlyoutContent, data,links }) => {
   const [open, setOpen] = useState(false);
   const showFlyout = FlyoutContent && open;
 
@@ -50,7 +66,7 @@ const FlyoutLink = ({ children, href, FlyoutContent, data }) => {
           >
             <div className="absolute -top-6 left-0 right-0 h-6 bg-transparent" />
             <div className="absolute left-1/2 top-0 h-4 w-4 -translate-x-1/2 -translate-y-1/2 rotate-45 bg-white" />
-            <FlyoutContent data={data} />
+            <FlyoutContent data={data} links={links} />
           </motion.div>
         )}
       </AnimatePresence>
@@ -60,14 +76,15 @@ const FlyoutLink = ({ children, href, FlyoutContent, data }) => {
 
 const DropdownContent = ({ data }) => {
   return (
-    <div className="w-64 bg-white p-6 shadow-xl ">
+    <div className="w-64 bg-white p-6 shadow-xl    ">
       {data.map((item, index) => (
-        <div key={index} className="mb-3 space-y-3">
+        <div key={index} className="mb-3 space-y-3 ">
           <a href="#" className="block text-sm hover:underline">
             {item}
           </a>
         </div>
       ))}
+      
     </div>
   );
 };
