@@ -65,7 +65,7 @@ const Homepage = () => {
               </motion.span>
             </AnimatePresence>
           </h1>
-          {/* <Scene /> */}
+          <Scene />
         </div>
       </div>
       <div className="section002">
@@ -86,7 +86,7 @@ const Homepage = () => {
 
 
           <div className='w-[50%] relative'>
-            {/* <Sphere /> */}
+            <Sphere />
           </div>
         </div>
       </div>

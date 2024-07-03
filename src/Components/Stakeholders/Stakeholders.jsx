@@ -11,7 +11,6 @@ const Stakeholders = () => {
     { imageUrl: './Homepage/stake5.svg', title: 'Investors and Shareholders' },
     { imageUrl: './Homepage/stake6.svg', title: 'Communities and NGOs' },
     { imageUrl: './Homepage/stake7.svg', title: 'Suppliers and Partners' },
-    // Add more items as needed
   ];
 
   return (
