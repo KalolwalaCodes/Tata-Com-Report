@@ -12,6 +12,9 @@ import BoardOfDirector from './Pages/BoardOfDirector/BoardOfDirector';
 import RiskManagement from './Pages/RiskManagment/RiskManagment';
 import ReliableGovernance from './Pages/ReliableGovernance/ReliableGovernance';
 import Footer from './Components/Footer/Footer';
+import Stakeholders from './Pages/Stakeholders/Stakeholders';
+import LongTermValue from './Pages/LongTermValue/LongTermValue';
+
 function App() {
 
   return (
@@ -20,13 +23,10 @@ function App() {
      {/* <Example/>  */}
      {/* <Homepage/> */}
      {/* <MdMessage/> */}
-    {/* <FinancialCapital/>   */}
-    {/*
-     <YearAtGlance/> */}
-     {/* <BoardOfDirector/> */}
-     {/* <RiskManagement/> */}
-     <ReliableGovernance/>
-     <Footer/>
+     <Homepage/>
+     {/* <YearAtGlance/> */}
+     <Stakeholders/>
+     <LongTermValue/>
     </>
   )
 }

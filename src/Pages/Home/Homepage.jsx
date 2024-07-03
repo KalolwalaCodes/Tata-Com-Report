@@ -8,8 +8,9 @@ import About from '../../Components/About/About';
 import Performance from '../../Components/Performance/Performance';
 import Stakeholders from '../../Components/Stakeholders/Stakeholders';
 import CapsTemplate from '../../Components/CapsTemplate/CapsTemplate';
-import FinancialCapital from '../FinancialCapital/FinancialCapital';
-import MfdIntelCapital from '../MfdIntelCapital/MfdIntelCapital';
+import FinancialCapital from '../Capitals/FinancialCapital';
+import MfdIntelCapital from '../Capitals/MfdIntelCapital';
+import NaturalCapital from '../Capitals/NaturalCapital';
 
 
 const Homepage = () => {
@@ -102,6 +103,7 @@ const Homepage = () => {
     </div>
     <FinancialCapital/>
     <MfdIntelCapital/>
+    <NaturalCapital/>
     </div>
 
   )
