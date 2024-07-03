@@ -8,6 +8,8 @@ import MdMessage from './Pages/Mdmessage/MdMessage';
 import YearAtGlance from './Pages/Home/Smallpages/YearAtGlance';
 import About from './Components/About/About';
 import Footer from './Components/Footer/Footer';
+import Stakeholders from './Pages/Stakeholders/Stakeholders';
+import LongTermValue from './Pages/LongTermValue/LongTermValue';
 
 function App() {
 
@@ -19,6 +21,8 @@ function App() {
      {/* <MdMessage/> */}
      <Homepage/>
      {/* <YearAtGlance/> */}
+     <Stakeholders/>
+     <LongTermValue/>
     </>
   )
 }

@@ -279,3 +279,10 @@ ul li{
   /* 1 #aab63a */
   /* 2 #2d8089 */
 }
+ li{
+   list-style-type: disc;
+ }
+
+ .bg{
+  border: 1px solid red;
+ }
