@@ -17,7 +17,8 @@ function App() {
      {/* <Example/>  */}
      {/* <Homepage/> */}
      {/* <MdMessage/> */}
-     <YearAtGlance/>
+     <Homepage/>
+     {/* <YearAtGlance/> */}
     </>
   )
 }
