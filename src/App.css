@@ -245,6 +245,9 @@ h1 {
 .text-green{
   color: #7b8421;
 }
+.text-hum{
+  color: #ad3287;
+}
 .bg-green{
   background-color: #7b8421;
 }
@@ -253,6 +256,9 @@ h1 {
 }
 .bg-green2{
   background-color: #b3bb35;
+}
+.bg-purp{
+  background-color: #f1e6ed;
 }
 
 
@@ -332,3 +338,8 @@ cursor: pointer;
  .navbar-main-sticky{
   box-shadow: 1px 2px 1px rgb(243, 240, 240);
  }
+ @media (max-width: 640px) {
+  .sm\:w-\[600px\] {
+      width: 200px;
+  }
+}

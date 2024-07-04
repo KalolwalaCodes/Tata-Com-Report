@@ -1,7 +1,7 @@
 import React, { useEffect, useState ,useRef} from 'react';
 import DropDownTab from './Dev';
 import { useInView } from 'framer-motion';
-
+import { Link } from 'react-router-dom';
 const Navbar = () => {
   const dropdowncontnet1=[
     'Message from MD and CEO',
@@ -34,11 +34,11 @@ const Navbar = () => {
       </div>
 
       <div className=" navbar-main-sticky flex justify-between w-full h-[50px] align-middle text-blue-900 font-500 sticky top-0">
-        <div className="flex w-[20%] justify-start bg-red-sz pl-[5%] align-middle pt-3"> <div>Home</div></div>
-        <div className="flex w-[38%]   justify-evenly bg-red-sz pr-6 align-middle  text-blue-900 font-500 pt-3">
+        <div className="flex w-[20%] justify-start bg-red-sz pl-[5%] align-middle pt-3"> <div><Link to={'/'}>Home</Link> </div></div>
+        <div className="flex sm:w-[58%] md:w-[38%]   justify-evenly bg-red-sz pr-6 align-middle  text-blue-900 font-500 pt-3">
           <DropDownTab name="Integrated Report" links={dropdowncontnet1} />
-          {/* <DropDownTab name="Financial Statements" /> */}
-          <DropDownTab name="Statutory Reports" />
+          {/* <DropDownTab name="FinancialStatements" />
+          <DropDownTab name="StatutoryReports" /> */}
         </div>
 
     </div>

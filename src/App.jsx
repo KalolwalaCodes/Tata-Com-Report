@@ -36,7 +36,7 @@ function App() {
      < Route path='/Governance'  element={<ReliableGovernance/>} />
      < Route path='/Board-of-Directors'  element={<BoardOfDirector/>} />
      < Route path='/year-at-glance'  element={<YearAtGlance/>} />
-     {/* < Route path='/Relationship'  element={<Relationships/>} /> */}
+     < Route path='/value-creation-model'  element={<Revolutionising/>} />
      </Routes>
 <Footer/>
 </BrowserRouter>
