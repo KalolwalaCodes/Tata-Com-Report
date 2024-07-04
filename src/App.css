@@ -243,6 +243,9 @@ h1 {
 .text-green{
   color: #7b8421;
 }
+.text-hum{
+  color: #ad3287;
+}
 .bg-green{
   background-color: #7b8421;
 }
@@ -251,6 +254,9 @@ h1 {
 }
 .bg-green2{
   background-color: #b3bb35;
+}
+.bg-purp{
+  background-color: #f1e6ed;
 }
 
 

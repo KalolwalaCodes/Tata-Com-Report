@@ -11,6 +11,7 @@ import CapsTemplate from '../../Components/CapsTemplate/CapsTemplate';
 import FinancialCapital from '../Capitals/FinancialCapital';
 import MfdIntelCapital from '../Capitals/MfdIntelCapital';
 import NaturalCapital from '../Capitals/NaturalCapital';
+import HumanCapital from '../Capitals/HumanCapital';
 
 
 const Homepage = () => {
@@ -104,6 +105,7 @@ const Homepage = () => {
     <FinancialCapital/>
     <MfdIntelCapital/>
     <NaturalCapital/>
+    <HumanCapital/>
     </div>
 
   )
