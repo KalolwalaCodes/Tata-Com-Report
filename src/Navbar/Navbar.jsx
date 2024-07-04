@@ -23,8 +23,8 @@ const Navbar = () => {
     'Board of Directors'
   ]
   return (
-    <div className="main-container-navbar-parent sticky top-0">
-      <div className="navbar-main w-full h-[60px]">
+    <div className="main-container-navbar-parent sticky top-[-6%]">
+      <div className="navbar-main w-full h-[60px] ">
         <div className="tata-com-main-logo">
           <img className="w-full" src="./Logos/TATA.svg" alt="Tata Logo" />
         </div>
@@ -32,14 +32,16 @@ const Navbar = () => {
           <img className="w-full" src="./Logos/main-parent-logo.svg" alt="Parent Logo" />
         </div>
       </div>
-      <div className=" navbar-main-sticky flex justify-between w-full h-[40px] align-middle text-blue-900 font-500">
-        <div className="flex w-[20%] justify-start bg-red-sz pl-[5%] align-middle pt-1"><div className="dropdown-tab">Home</div></div>
-        <div className="flex w-[48%]   justify-evenly bg-red-sz pr-6 align-middle pt-1 text-blue-900 font-500">
+
+      <div className=" navbar-main-sticky flex justify-between w-full h-[50px] align-middle text-blue-900 font-500 sticky top-0">
+        <div className="flex w-[20%] justify-start bg-red-sz pl-[5%] align-middle pt-3"> <div>Home</div></div>
+        <div className="flex w-[38%]   justify-evenly bg-red-sz pr-6 align-middle  text-blue-900 font-500 pt-3">
           <DropDownTab name="Integrated Report" links={dropdowncontnet1} />
-          <DropDownTab name="Financial Statements" />
+          {/* <DropDownTab name="Financial Statements" /> */}
           <DropDownTab name="Statutory Reports" />
         </div>
-      </div>
+
+    </div>
     </div>
   );
 };

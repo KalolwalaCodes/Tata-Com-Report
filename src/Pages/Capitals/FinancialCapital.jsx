@@ -8,9 +8,10 @@ const FinancialCapital = () => {
     { val1: '₹476 crores', val2: 'Dividend' },
     { val1: '₹4,230 crores', val2: 'EBITDA' },
   ];
+  
   return (
     <div>
-      <CapsTemplate src={'./CapsTemplate/FCaps.jpg'} title={"Financial"} values={values} theme={"#3d85c6"} gradient={"#376479"} ico={"./Homepage/fin-icon1.svg"} />
+      <CapsTemplate src={'./CapsTemplate/FCaps.jpg'} title={"Financial"} values={values} theme={"#3d85c6"} gradient={"#3d85c6"} ico={"./Homepage/fin-icon1.svg"} />
       <div className='marginal my-10'>
         <p className='text-blue text-2xl font-semibold'>
           Our financial strength, built on a healthy balance sheet and consistent cash flow generation, fuels our strategic growth plans. With prudent investments, mergers and acquisitions, we have delivered strong revenue growth led by the data portfolio. It not only positions us to strengthen the digital fabric of a hyperconnected future but also provides the necessary impetus for capitalising on emerging opportunities.
