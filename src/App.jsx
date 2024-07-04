@@ -16,6 +16,7 @@ import Stakeholders from './Pages/Stakeholders/Stakeholders.jsx';
 import YearAtGlance from './Pages/Home/Smallpages/YearAtGlance';
 import Revolutionising from './Pages/Revolutionising/Revolutionising';
 // import Relationships from './Pages/Relationships/Relationships.jsx';
+import HumanCapital from './Pages/Capitals/HumanCapital';
 
 function App() {
 
@@ -37,6 +38,7 @@ function App() {
      < Route path='/Board-of-Directors'  element={<BoardOfDirector/>} />
      < Route path='/year-at-glance'  element={<YearAtGlance/>} />
      < Route path='/value-creation-model'  element={<Revolutionising/>} />
+     < Route path='/human-capital'  element={<HumanCapital/>} />
      </Routes>
 <Footer/>
 </BrowserRouter>

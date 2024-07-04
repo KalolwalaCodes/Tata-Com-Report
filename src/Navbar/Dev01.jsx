@@ -87,7 +87,7 @@ const DropdownContent = ({ data }) => {
     '/Financial-Capital',
     '/Manufactured-and-Intellectual-Capital',
     '/Natural-Capital',
-    '/Human-Capital',
+    '/human-capital',
     '/Social-and-Relationship-Capital',
     '/Risk-management',
     '/Governance',
