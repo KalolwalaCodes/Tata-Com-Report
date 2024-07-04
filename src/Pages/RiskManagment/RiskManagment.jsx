@@ -137,7 +137,7 @@ const RiskManagement = () => {
                 with the legal team to uphold regulatory requirements.
               </li>
               <li>
-                 We maintain transparency and accountability throughout our
+                We maintain transparency and accountability throughout our
                 organization’s processes, systems, and operations.{" "}
               </li>
             </ul>

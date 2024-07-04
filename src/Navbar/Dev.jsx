@@ -96,8 +96,8 @@ const DropdownContent = ({ data }) => {
   const secondHalf = data.slice(midpoint+1);
   const SecondHalfLink=linksArray.slice(midpoint);
   return (
-    <div className="w-[400px] bg-white p-3 shadow-xl flex flex-wrap">
-      <div className="w-1/2 pr-3">
+    <div className="md:w-[400px] sm:w-[600px]  bg-white p-3 shadow-xl flex sm:flex-col md:flex-row flex-wrap">
+      <div className="md:w-1/2 sm:w-full md:pr-3 sm:pr-0">
         {firstHalf.map((item, index) => (
           <div key={index} className="mb-3 space-y-3">
             <Link to={fristHalfLink[index]} className="block text-sm hover:underline font-bold text-blue-400 hover:text-blue-500">
@@ -106,7 +106,7 @@ const DropdownContent = ({ data }) => {
           </div>
         ))}
       </div>
-      <div className="w-1/2 pl-3">
+      <div className="md:w-1/2 sm:w-full md:pl-3 sm:pl-0">
         {secondHalf.map((item, index) => (
           <div key={index} className="mb-3 space-y-3">
             <Link to={SecondHalfLink[index]} className="block text-sm hover:underline font-bold text-blue-400 hover:text-blue-500">

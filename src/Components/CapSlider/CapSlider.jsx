@@ -65,7 +65,7 @@ const Capslider = () => {
             </a>
           </div>
           <div className="col-lg-4">
-            <a href='/manufactured-capital' className="url-box">
+            <a href='/Manufactured-and-Intellectual-Capital' className="url-box">
               <figure className='newsCard news-Slide-up mfd-up special-card'>
                 <img src="./Homepage/mfd-intel-cap2.png" alt="Manufactured Capital"/>
                 <div className='newsCaption px-4 special-caption'>
@@ -85,7 +85,7 @@ const Capslider = () => {
             </a>
           </div>
           <div className="col-lg-4">
-            <a href='/intellectual-capital' className="url-box">
+            <a href='/Natural-Capital' className="url-box">
               <figure className='newsCard news-Slide-up nat-up'>
                 <img src="./Homepage/nat-cap3.png"  alt="Intellectual Capital"/>
                 <div className='newsCaption px-4'>
