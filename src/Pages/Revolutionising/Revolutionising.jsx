@@ -106,7 +106,7 @@ function Revolutionising() {
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 export default Revolutionising;

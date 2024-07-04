@@ -15,6 +15,7 @@ import LongTermValue from './Pages/LongTermValue/LongTermValue.jsx';
 import Stakeholders from './Pages/Stakeholders/Stakeholders.jsx';
 import YearAtGlance from './Pages/Home/Smallpages/YearAtGlance';
 import Revolutionising from './Pages/Revolutionising/Revolutionising';
+// import Relationships from './Pages/Relationships/Relationships.jsx';
 
 function App() {
 
