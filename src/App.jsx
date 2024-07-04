@@ -10,6 +10,7 @@ import About from './Components/About/About';
 import Footer from './Components/Footer/Footer';
 import Stakeholders from './Pages/Stakeholders/Stakeholders';
 import LongTermValue from './Pages/LongTermValue/LongTermValue';
+import Revolutionising from './Pages/Revolutionising/Revolutionising';
 
 function App() {
 
@@ -19,9 +20,10 @@ function App() {
      {/* <Example/>  */}
      {/* <Homepage/> */}
      {/* <MdMessage/> */}
-     <YearAtGlance/>
+     {/* <YearAtGlance/>
      <Stakeholders/>
-     <LongTermValue/>
+     <LongTermValue/> */}
+     <Revolutionising/>
     </>
   )
 }
