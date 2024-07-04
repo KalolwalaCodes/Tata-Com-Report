@@ -16,6 +16,8 @@ import MfdIntelCapital from "../Capitals/MfdIntelCapital";
 import NaturalCapital from "../Capitals/NaturalCapital";
 import Capslider from "../../Components/CapSlider/CapSlider";
 import { Link } from "react-router-dom";
+import HumanCapital from "../Capitals/HumanCapital";
+import SrCapital from "../Capitals/SrCapital";
 import Relationships from "../Relationships/Relationships";
 
 const Homepage = () => {
