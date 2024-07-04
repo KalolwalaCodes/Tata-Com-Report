@@ -77,94 +77,165 @@ const ReliableGovernance = () => {
         </div>
       </div>
       <div>
-      <h4 className="font-semibold my-5 text-xl text-navy">
-      Policy management
-      </h4>
-     <p>Each fiscal year, we undertake a comprehensive review of our policy framework to keep our practices contemporary and effective. In FY24, significant updates were made to the Internal Privacy Policy, Anti-Human Trafficking and Modern-day Slavery Statement, Conflict of Interest Policy, Sanctions and Trade Controls Policy, and the Supplier Code of Conduct. These revisions ensure that our policies remain aligned with global standards and legislative changes.</p>
-      </div>
-      <h4 className="font-semibold my-5 text-xl text-navy">Ethics and transparency</h4>
-      <div className="flex sm:flex-col md:flex-row gap-8">
-      
-      <div className="md:w-[60%] sm:w-full">
-<p> We foster an ethical business environment that supports transparency and integrity.
-Our comprehensive ethics and compliance framework is designed to ensure that all employees
-and stakeholders uphold the core values enshrined in the Tata Code of Conduct.</p>
-<br />
-<b className="text-navy" style={{fontSize:"18px"}}>
-Building on our existing framework, we have instituted multiple initiatives in 2024 to elevate our ethical standards across the organisation.
-
-</b>
-      </div>
-      <img src="./Risk/policyManagment.png" alt="" />
-      </div>
-      <div className="flex sm:flex-col md:flex-row gap-8">
-      <div className="md:w-[60%] sm:w-full">
-      <h4 className="font-semibold text-blue my-5 text-xl">
-      Key initiatives
-        </h4>
-        <b>Ethics Week</b>
-        <p>This annual event plays a crucial 
-role in strengthening the ethical standards across the Company. Through a series of engaging activities such as informational competitions, games, quizzes 
-and contests, we aim to enhance awareness and renew our employees' understanding of Company policies and ethical practices.
-</p>
-<b>Leadership Dialogue on Tata Values</b>
-<p>Celebrating 25 years of the Tata Code of Conduct, this initiative has been instrumental in deepening 
-the understanding of our ethical standards. Leadership members engage in meaningful discussions with their teams, exploring ethical dilemmas to reinforce a practical understanding of the core values and principles that guide our actions.</p>
-<br />
-<h4 className="font-semibold text-blue my-5 text-xl">
-Ethics Counsellors
-        </h4>
-        <p>Utilising 'Viva Engage', our internal communications platform, our Ethics Counsellors regularly 
-        publish knowledge snippets about Company policies and ethics-related practices. This initiative keeps all employees well-informed about their obligations under the policies.</p>
         <h4 className="font-semibold my-5 text-xl text-navy">
-        Governance in supply chain
-      </h4>
-      <p>We uphold rigorous governance standards within our supply 
-chain, ensuring that all partners 
-and suppliers adhere to the same ethical standards and practices 
-as we do. This is ensured through 
-a comprehensive governance framework designed to align 
-every aspect of our supply chain operations with the principles 
-of integrity, transparency 
-and ethical conduct.</p>
-<h4 className="font-semibold text-blue my-5 text-xl">
-Key elements of supply  <br />
-chain governance
+          Policy management
         </h4>
-       </div>
-         <div className=" w-[40%]"><img className="object-contain" src="./Risk/aman3.jpg" alt="" />
-        <div className="flex flex-wrap gap-4 justify-start align-top ">
-        <img  className="object-contain w-[45%]" src="./Risk/bodstatus.png" alt="" />
-        <img  className="object-contain w-[45%]" src="./Risk/boardComposition.png" alt="" />
+        <p>
+          Each fiscal year, we undertake a comprehensive review of our policy
+          framework to keep our practices contemporary and effective. In FY24,
+          significant updates were made to the Internal Privacy Policy,
+          Anti-Human Trafficking and Modern-day Slavery Statement, Conflict of
+          Interest Policy, Sanctions and Trade Controls Policy, and the Supplier
+          Code of Conduct. These revisions ensure that our policies remain
+          aligned with global standards and legislative changes.
+        </p>
+      </div>
+      <h4 className="font-semibold my-5 text-xl text-navy">
+        Ethics and transparency
+      </h4>
+      <div className="flex sm:flex-col md:flex-row gap-8">
+        <div className="md:w-[60%] sm:w-full">
+          <p>
+            {" "}
+            We foster an ethical business environment that supports transparency
+            and integrity. Our comprehensive ethics and compliance framework is
+            designed to ensure that all employees and stakeholders uphold the
+            core values enshrined in the Tata Code of Conduct.
+          </p>
+          <br />
+          <b className="text-navy" style={{ fontSize: "18px" }}>
+            Building on our existing framework, we have instituted multiple
+            initiatives in 2024 to elevate our ethical standards across the
+            organisation.
+          </b>
         </div>
-         </div>
-         
+        <img src="./Risk/policyManagment.png" alt="" />
+      </div>
+      <div className="flex sm:flex-col md:flex-row gap-8">
+        <div className="md:w-[60%] sm:w-full">
+          <h4 className="font-semibold text-blue my-5 text-xl">
+            Key initiatives
+          </h4>
+          <b>Ethics Week</b>
+          <p>
+            This annual event plays a crucial role in strengthening the ethical
+            standards across the Company. Through a series of engaging
+            activities such as informational competitions, games, quizzes and
+            contests, we aim to enhance awareness and renew our employees'
+            understanding of Company policies and ethical practices.
+          </p>
+          <b>Leadership Dialogue on Tata Values</b>
+          <p>
+            Celebrating 25 years of the Tata Code of Conduct, this initiative
+            has been instrumental in deepening the understanding of our ethical
+            standards. Leadership members engage in meaningful discussions with
+            their teams, exploring ethical dilemmas to reinforce a practical
+            understanding of the core values and principles that guide our
+            actions.
+          </p>
+          <br />
+          <h4 className="font-semibold text-blue my-5 text-xl">
+            Ethics Counsellors
+          </h4>
+          <p>
+            Utilising 'Viva Engage', our internal communications platform, our
+            Ethics Counsellors regularly publish knowledge snippets about
+            Company policies and ethics-related practices. This initiative keeps
+            all employees well-informed about their obligations under the
+            policies.
+          </p>
+          <h4 className="font-semibold my-5 text-xl text-navy">
+            Governance in supply chain
+          </h4>
+          <p>
+            We uphold rigorous governance standards within our supply chain,
+            ensuring that all partners and suppliers adhere to the same ethical
+            standards and practices as we do. This is ensured through a
+            comprehensive governance framework designed to align every aspect of
+            our supply chain operations with the principles of integrity,
+            transparency and ethical conduct.
+          </p>
+          <h4 className="font-semibold text-blue my-5 text-xl">
+            Key elements of supply <br />
+            chain governance
+          </h4>
+        </div>
+        <div className=" w-[40%]">
+          <img className="object-contain" src="./Risk/aman3.jpg" alt="" />
+          <div className="flex flex-wrap gap-4 justify-start align-top ">
+            <img
+              className="object-contain w-[45%]"
+              src="./Risk/bodstatus.png"
+              alt=""
+            />
+            <img
+              className="object-contain w-[45%]"
+              src="./Risk/boardComposition.png"
+              alt=""
+            />
+          </div>
+        </div>
       </div>
       <h4 className="font-semibold my-5 text-xl text-navy">
         Supplier Code of Conduct
       </h4>
-      <p>We have established a detailed Supplier Code of Conduct that outlines our expectations from our Suppliers in areas such as ethics, anti-corruption, information security, labour and human rights and environmental protection.</p>
-      <h4 className="font-semibold my-5 text-xl text-navy">Collaboration and Engagement</h4>
-      <p>Continuous dialogue and feedback with suppliers enhance transparency and mutual accountability.</p>
-      <h4 className="font-semibold my-5 text-xl text-navy">Capacity Building and Training</h4>
-      <p>We provide training and resources to suppliers to help them understand and meet our governance standards.</p>
+      <p>
+        We have established a detailed Supplier Code of Conduct that outlines
+        our expectations from our Suppliers in areas such as ethics,
+        anti-corruption, information security, labour and human rights and
+        environmental protection.
+      </p>
+      <h4 className="font-semibold my-5 text-xl text-navy">
+        Collaboration and Engagement
+      </h4>
+      <p>
+        Continuous dialogue and feedback with suppliers enhance transparency and
+        mutual accountability.
+      </p>
+      <h4 className="font-semibold my-5 text-xl text-navy">
+        Capacity Building and Training
+      </h4>
+      <p>
+        We provide training and resources to suppliers to help them understand
+        and meet our governance standards.
+      </p>
       <h4 className="font-semibold my-5 text-xl text-navy">Compliance</h4>
-      <p>We have a robust framework for ethics and compliance, integrating these core aspects into all levels of our operations. This commitment is reflected in our continuous efforts to ensure transparency, accountability and adherence to high ethical standards across the organisation. </p>
+      <p>
+        We have a robust framework for ethics and compliance, integrating these
+        core aspects into all levels of our operations. This commitment is
+        reflected in our continuous efforts to ensure transparency,
+        accountability and adherence to high ethical standards across the
+        organisation.{" "}
+      </p>
       <h4 className="font-semibold text-blue my-5 text-xl">
-      Annual Compliance Report
-        </h4>
-        <p>Our compliance activities are documented and assessed through an Annual Compliance Report 
-(‘ACR’). This report evaluates our actions against the four pillars of the Leadership of Business Ethics Framework: Leadership, Compliance Structure, Communication & Training and Measurement of Effectiveness. Feedback from this report helps 
-us refine our practices, and we are rated on a maturity scale ranging from Basic to Advanced, guiding our continuous improvement 
-in business ethics.</p>
-<h4 className="font-semibold text-navy my-5 text-xl">
-Governance Framework 
-and Highlights
-        </h4>
-        <p>Our Governance Structure is multi- tiered, comprising the Board of Directors, Board Committees, MD & CEO and the Global Management Committee (‘GMC’). The Board is responsible for and is committed 
-to sound principles of Corporate Governance in the Company having ethical oversight that goes beyond mere regulatory compliance, establishing robust governance practices and promoting a culture of accountability and ethical behaviour. The Board’s primary role is to ensure the long-term sustainable success of the Company for the mutual benefit of all stakeholders and has ultimate responsibility 
-for the development of strategy, Company’s capital structure and other financing matters, oversight of policies, procedures and internal controls, setting and monitoring the Company’s culture and promoting ethical behaviour.</p>
-         
+        Annual Compliance Report
+      </h4>
+      <p>
+        Our compliance activities are documented and assessed through an Annual
+        Compliance Report (‘ACR’). This report evaluates our actions against the
+        four pillars of the Leadership of Business Ethics Framework: Leadership,
+        Compliance Structure, Communication & Training and Measurement of
+        Effectiveness. Feedback from this report helps us refine our practices,
+        and we are rated on a maturity scale ranging from Basic to Advanced,
+        guiding our continuous improvement in business ethics.
+      </p>
+      <h4 className="font-semibold text-navy my-5 text-xl">
+        Governance Framework and Highlights
+      </h4>
+      <p>
+        Our Governance Structure is multi- tiered, comprising the Board of
+        Directors, Board Committees, MD & CEO and the Global Management
+        Committee (‘GMC’). The Board is responsible for and is committed to
+        sound principles of Corporate Governance in the Company having ethical
+        oversight that goes beyond mere regulatory compliance, establishing
+        robust governance practices and promoting a culture of accountability
+        and ethical behaviour. The Board’s primary role is to ensure the
+        long-term sustainable success of the Company for the mutual benefit of
+        all stakeholders and has ultimate responsibility for the development of
+        strategy, Company’s capital structure and other financing matters,
+        oversight of policies, procedures and internal controls, setting and
+        monitoring the Company’s culture and promoting ethical behaviour.
+      </p>
     </div>
   );
 };

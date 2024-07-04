@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './Performance.css'; // Make sure to adjust the path as needed
+import { motion } from 'framer-motion';
 
 const barsData = [
   { 
@@ -54,7 +55,10 @@ const Performance = () => {
   const [activeBar, setActiveBar] = useState(1);
 
   return (
-    <div className="general-container my-10">
+    <motion.div initial={{ scale:0.5, opacity: 0 }}
+    whileInView={{scale:1, opacity: 1 }}
+    transition={{ duration: 0.6, ease: "easeInOut" }}
+    viewport={{ once: true }}  className="general-container my-10">
       {barsData.map(bar => (
         <React.Fragment key={bar.id}>
           <input
@@ -92,7 +96,7 @@ const Performance = () => {
           </label>
         </React.Fragment>
       ))}
-    </div>
+    </motion.div>
   );
 };
 
