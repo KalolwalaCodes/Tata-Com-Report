@@ -18,7 +18,7 @@ const About = () => {
                         <BookOpen />
                     </div>
                 </div>
-                <Capslider />
+                {/* <Capslider /> */}
 
             </div>
 

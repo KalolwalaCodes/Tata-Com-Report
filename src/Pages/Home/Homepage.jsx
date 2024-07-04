@@ -11,6 +11,7 @@ import CapsTemplate from '../../Components/CapsTemplate/CapsTemplate';
 import FinancialCapital from '../Capitals/FinancialCapital';
 import MfdIntelCapital from '../Capitals/MfdIntelCapital';
 import NaturalCapital from '../Capitals/NaturalCapital';
+import Capslider from '../../Components/CapSlider/CapSlider';
 
 
 const Homepage = () => {
@@ -51,7 +52,7 @@ const Homepage = () => {
     <div className='w-full'>
       <div className="app-container">
         <img className='cover-logo' src="./Tata_Comm_logo.svg" alt="" />
-        <h1 className='re'>Re</h1> {/* Static text */}
+        <h1 className='re text-blue-900'>Re</h1> {/* Static text */}
         <p className='cover-subtitle'>Integrated <br />Report 2023-24</p>
         <div className="scene-container">
           <h1 className='imagine'>
@@ -96,17 +97,17 @@ const Homepage = () => {
       <div className='marginal'>
         <h2 className='h2 text-navy mt-10 text-center'>Our performance highlights</h2>
         <Performance />
-
+  <Capslider/>
       <h2 className='h2 text-navy'>Our stakeholders</h2>
       <Stakeholders />
       {/* *************************** */}
     </div>
-    <FinancialCapital/>
+    {/* <FinancialCapital/>
     <MfdIntelCapital/>
-    <NaturalCapital/>
+    <NaturalCapital/> */}
     </div>
 
   )
 }
 
-export default Homepage
+export default Homepage;

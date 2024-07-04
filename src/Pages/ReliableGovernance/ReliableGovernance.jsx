@@ -131,7 +131,16 @@ and ethical conduct.</p>
 Key elements of supply  <br />
 chain governance
         </h4>
-        <h4 className="font-semibold my-5 text-xl text-navy">
+       </div>
+         <div className=" w-[40%]"><img className="object-contain" src="./Risk/aman3.jpg" alt="" />
+        <div className="flex flex-wrap gap-4 justify-start align-top ">
+        <img  className="object-contain w-[45%]" src="./Risk/bodstatus.png" alt="" />
+        <img  className="object-contain w-[45%]" src="./Risk/boardComposition.png" alt="" />
+        </div>
+         </div>
+         
+      </div>
+      <h4 className="font-semibold my-5 text-xl text-navy">
         Supplier Code of Conduct
       </h4>
       <p>We have established a detailed Supplier Code of Conduct that outlines our expectations from our Suppliers in areas such as ethics, anti-corruption, information security, labour and human rights and environmental protection.</p>
@@ -155,15 +164,7 @@ and Highlights
         <p>Our Governance Structure is multi- tiered, comprising the Board of Directors, Board Committees, MD & CEO and the Global Management Committee (‘GMC’). The Board is responsible for and is committed 
 to sound principles of Corporate Governance in the Company having ethical oversight that goes beyond mere regulatory compliance, establishing robust governance practices and promoting a culture of accountability and ethical behaviour. The Board’s primary role is to ensure the long-term sustainable success of the Company for the mutual benefit of all stakeholders and has ultimate responsibility 
 for the development of strategy, Company’s capital structure and other financing matters, oversight of policies, procedures and internal controls, setting and monitoring the Company’s culture and promoting ethical behaviour.</p>
-         </div>
-         <div className=" w-[40%]"><img className="object-contain" src="./Risk/aman3.jpg" alt="" />
-        <div className="flex flex-wrap gap-4 justify-start align-top ">
-        <img  className="object-contain w-[45%]" src="./Risk/bodstatus.png" alt="" />
-        <img  className="object-contain w-[45%]" src="./Risk/boardComposition.png" alt="" />
-        </div>
-         </div>
          
-      </div>
     </div>
   );
 };

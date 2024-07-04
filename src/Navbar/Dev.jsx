@@ -21,7 +21,7 @@ const DropDownTab = ({ name,links }) => {
     'Risk management',
     'Reliable governance for responsible value creation',
     'Board of Directors'],
-    "Statutory Reports": ['Statutory Reports', 'dummyContent3', 'dummyContent3', 'dummyContent3', 'dummyContent3'],
+    "Statutory Reports": ['Statutory Reports', 'Notice', 'Board’s Report', 'Management Discussion and Analysis', 'Corporate Governance Report','BRSR'],
     "Financial Statements": ['Financial Statements', 'dummyContent4', 'dummyContent4', 'dummyContent4', 'dummyContent4']
   };
   console.log("the data is ", dataSetOfDropdown[name][0], dataSetOfDropdown[name]);
@@ -75,18 +75,34 @@ const FlyoutLink = ({ children, href, FlyoutContent, data,links }) => {
 };
 
 const DropdownContent = ({ data }) => {
+  // Split the data into two halves
+  const midpoint = Math.ceil(data.length / 2);
+  const firstHalf = data.slice(0, midpoint);
+  const secondHalf = data.slice(midpoint);
+
   return (
-    <div className="w-64 bg-white p-6 shadow-xl    ">
-      {data.map((item, index) => (
-        <div key={index} className="mb-3 space-y-3 ">
-          <a href="#" className="block text-sm hover:underline">
-            {item}
-          </a>
-        </div>
-      ))}
-      
+    <div className="w-[400px] bg-white p-3 shadow-xl flex flex-wrap">
+      <div className="w-1/2 pr-3">
+        {firstHalf.map((item, index) => (
+          <div key={index} className="mb-3 space-y-3">
+            <a href="#" className="block text-sm hover:underline font-bold text-blue-400 hover:text-blue-500">
+              {item}
+            </a>
+          </div>
+        ))}
+      </div>
+      <div className="w-1/2 pl-3">
+        {secondHalf.map((item, index) => (
+          <div key={index} className="mb-3 space-y-3">
+            <a href="#" className="block text-sm hover:underline font-bold text-blue-400 hover:text-blue-500">
+              {item}
+            </a>
+          </div>
+        ))}
+      </div>
     </div>
   );
 };
+
 
 export default DropDownTab;
