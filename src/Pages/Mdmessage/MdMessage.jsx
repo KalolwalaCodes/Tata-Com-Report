@@ -4,6 +4,7 @@ const MdMessage = () => {
   return (
     <div className="w-[86%] m-auto md-message-container">
       <h3 className="big-normal-heading-blue">Message from MD and CEO</h3>
+      <img className=' object-contain' src="./mdb chiarman.webp" alt="" />
       <p className="text-bold-container mt-5">
         <span className="dark-blue-head font-bold">Dear Shareholders, <br /></span> In my last letter to you I shared our commitment to
         achieving strong and sustainable growth. It gives me immense pleasure to

@@ -16,7 +16,7 @@ const SphereParticles = () => {
   const particles = [];
 
   const numParticles = 1800;
-  const radius = 2;
+  const radius = 2.8;
 
   for (let i = 0; i < numParticles; i++) {
     const theta = Math.random() * 2 * Math.PI;
@@ -55,7 +55,7 @@ const Scene = () => {
 
 export default function Sphere() {
   return (
-    <div style={{ width:"100%", height:"80vh", backgroundColor: 'transparent' }}>
+    <div style={{ width:"100%", backgroundColor: 'transparent' }}>
       <Canvas className='canvas-sphere' >
         <Scene />
       </Canvas>

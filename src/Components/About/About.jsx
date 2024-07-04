@@ -3,6 +3,7 @@ import Capslider from '../CapSlider/CapSlider'
 import BookOpen from '../BookOpen/BookOpen'
 
 import './About.css'
+import { Link } from 'react-router-dom';
 const About = () => {
     return (
         <div className=''>
@@ -13,12 +14,14 @@ const About = () => {
                         <h2 className='h2 text-navy my-5'>About the report</h2>
                         <h2 className='h-xl text-orange'>Our Integrated Approach</h2>
                         <p className='flex-1'>The Report provides a succinct account of our performance from a broad perspective, and our value creation process in the short, medium and long term. It demonstrates how we create and retain stakeholder value through the intervention of various capitals that we deploy. We leverage our capital to formulate and execute strategies for sustained value creation. We measure the outcome of our business strategies by measuring the stakeholder impact. The Report takes a forward-looking approach and also elaborates on the opportunities and challenges faced by us.</p>
+                        <Link target='_blank' to={'./Pdf/ATR.pdf'}> <button className='px-5 py-2 my-5 rounded-md bg-[#e87625] text-xl font-700 bottom-[10%] left-[7%] hover:bg-[#ef8438] text-white transition-all duration-300'> Read More</button></Link>
+                       
                     </div>
                     <div className='flex-1'>
                         <BookOpen />
                     </div>
                 </div>
-                <Capslider />
+                {/* <Capslider /> */}
 
             </div>
 

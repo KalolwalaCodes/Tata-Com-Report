@@ -8,6 +8,7 @@ const FinancialCapital = () => {
     { val1: '₹476 crores', val2: 'Dividend' },
     { val1: '₹4,230 crores', val2: 'EBITDA' },
   ];
+  
   return (
     <div>
       <CapsTemplate src={'./CapsTemplate/FCaps.jpg'} title={"Financial"} values={values} theme={"#3d85c6"} gradient={"#3d85c6"} ico={"./Homepage/fin-icon1.svg"} />

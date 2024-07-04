@@ -1,27 +1,25 @@
 import React, { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const DropDownTab = ({ name,links }) => {
   console.log("here is name ", name);
   const dataSetOfDropdown = {
     "Integrated Report": ['Integrated Report', 'Message from MD and CEO',
     'Year at a Glance',
-    'Reimagining, redefining and revolutionising',
     'value creation',
-    'Charting our way forward with all stakeholders',
-    'Addressing material issues, growing long-term value',
+    'Stakeholder engagement',
+    'Materiality assessment',
     'Corporate details',
     'Financial Capital',
     'Manufactured and Intellectual Capital',
-    'Revolutionising Innovation ',
-    'Our ESG strategy',
     'Natural Capital',
     'Human Capital',
     'Social and Relationship Capital',
     'Risk management',
-    'Reliable governance for responsible value creation',
+    'Governance',
     'Board of Directors'],
-    "Statutory Reports": ['Statutory Reports', 'dummyContent3', 'dummyContent3', 'dummyContent3', 'dummyContent3'],
+    "Statutory Reports": ['Statutory Reports', 'Notice', 'Board’s Report', 'Management Discussion and Analysis', 'Corporate Governance Report','BRSR'],
     "Financial Statements": ['Financial Statements', 'dummyContent4', 'dummyContent4', 'dummyContent4', 'dummyContent4']
   };
   console.log("the data is ", dataSetOfDropdown[name][0], dataSetOfDropdown[name]);
@@ -75,18 +73,52 @@ const FlyoutLink = ({ children, href, FlyoutContent, data,links }) => {
 };
 
 const DropdownContent = ({ data }) => {
+  const linksArray=[
+    '/Message-from-MD-and-CEO',
+    'year-at-glance',
+    '/Value-Creations',
+    '/Stakeholder-engagement',
+    '/Materiality-assessment',
+    "/Corporate-details",
+    '/Financial-Capital',
+    '/Manufactured-and-Intellectual-Capital',
+    '/Natural-Capital',
+    '/Human-Capital',
+    '/Social-and-Relationship-Capital',
+    '/Risk-management',
+    '/Governance',
+  '/Board-of-Directors'
+  ]
+  // Split the data into two halves
+  const midpoint = Math.ceil(data.length / 2);
+  const firstHalf = data.slice(1, midpoint);
+  const fristHalfLink=linksArray.slice(0, midpoint);
+  const secondHalf = data.slice(midpoint+1);
+  const SecondHalfLink=linksArray.slice(midpoint);
   return (
-    <div className="w-64 bg-white p-6 shadow-xl    ">
-      {data.map((item, index) => (
-        <div key={index} className="mb-3 space-y-3 ">
-          <a href="#" className="block text-sm hover:underline">
-            {item}
-          </a>
-        </div>
-      ))}
-      
+    <div className="w-[400px] bg-white p-3 shadow-xl flex flex-wrap">
+      <div className="w-1/2 pr-3">
+        {firstHalf.map((item, index) => (
+          <div key={index} className="mb-3 space-y-3">
+            <Link to={fristHalfLink[index]} className="block text-sm hover:underline font-bold text-blue-400 hover:text-blue-500">
+              {item}
+            </Link>
+          </div>
+        ))}
+      </div>
+      <div className="w-1/2 pl-3">
+        {secondHalf.map((item, index) => (
+          <div key={index} className="mb-3 space-y-3">
+            <Link to={SecondHalfLink[index]} className="block text-sm hover:underline font-bold text-blue-400 hover:text-blue-500">
+              {item}
+            </Link>
+          </div>
+        ))}
+      </div>
     </div>
   );
 };
+
+
 
 export default DropDownTab;
