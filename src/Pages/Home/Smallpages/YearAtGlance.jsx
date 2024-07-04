@@ -59,6 +59,7 @@ const YearAtGlance = () => {
       <p className="normal-text-container my-4 mt-2">
       We have partnered with JLR to future-proof their digital transformation by connecting all 128 global JLR sites using our advanced cloud-first, software- defined network (SD-WAN) technology. This will enable JLR to bring in AI- powered and real-time data capturing, monitoring and analysis to improve production line performance.
             </p>
+      
     </div>
   )
 }

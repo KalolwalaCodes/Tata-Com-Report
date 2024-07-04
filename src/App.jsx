@@ -15,6 +15,7 @@ import LongTermValue from './Pages/LongTermValue/LongTermValue.jsx';
 import Stakeholders from './Pages/Stakeholders/Stakeholders.jsx';
 import YearAtGlance from './Pages/Home/Smallpages/YearAtGlance';
 import Revolutionising from './Pages/Revolutionising/Revolutionising';
+// import Relationships from './Pages/Relationships/Relationships.jsx';
 
 function App() {
 
@@ -35,6 +36,7 @@ function App() {
      < Route path='/Governance'  element={<ReliableGovernance/>} />
      < Route path='/Board-of-Directors'  element={<BoardOfDirector/>} />
      < Route path='/year-at-glance'  element={<YearAtGlance/>} />
+     {/* < Route path='/Relationship'  element={<Relationships/>} /> */}
      </Routes>
 <Footer/>
 </BrowserRouter>

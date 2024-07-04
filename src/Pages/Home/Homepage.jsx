@@ -16,6 +16,7 @@ import MfdIntelCapital from "../Capitals/MfdIntelCapital";
 import NaturalCapital from "../Capitals/NaturalCapital";
 import Capslider from "../../Components/CapSlider/CapSlider";
 import { Link } from "react-router-dom";
+import Relationships from "../Relationships/Relationships";
 
 const Homepage = () => {
   const texts = ["Imagine", "Design", "Position"]; // Array of texts to cycle through
@@ -136,6 +137,7 @@ const Homepage = () => {
       {/* <FinancialCapital/>
     <MfdIntelCapital/>
     <NaturalCapital/> */}
+     <Relationships/>
     </div>
   );
 };
