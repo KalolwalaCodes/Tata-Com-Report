@@ -1,6 +1,7 @@
 import React from 'react';
 import FastMarquee from 'react-fast-marquee';
 import './Stakeholders.css'; // Import your CSS for styling
+import { motion } from 'framer-motion';
 
 const Stakeholders = () => {
   const items = [
@@ -14,7 +15,7 @@ const Stakeholders = () => {
   ];
 
   return (
-    <FastMarquee className="marquee my-10" speed={40} gradient={true} loop={0}>
+    <FastMarquee  className="marquee my-10" speed={40} gradient={true} loop={0}>
       {items.map((item, index) => (
         <div className="marquee-item" key={index}>
           <img src={item.imageUrl} alt={item.title} className="marquee-item__image" />

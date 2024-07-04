@@ -4,6 +4,8 @@ import './CapSlider.css';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import { TextAnimation01 } from '../../Animation/TextAnimation';
+import { motion } from 'framer-motion';
 
 const Capslider = () => {
   const settings = {
@@ -34,8 +36,11 @@ const Capslider = () => {
   };
 
   return (
-    <div className=" my-10">
-      <h1 className='h2 text-navy my-10'>Our Capitals</h1>
+    <motion.div initial={{ x:"30%", opacity: 0 }}
+    whileInView={{x:0, opacity: 1 }}
+    transition={{ duration: 0.6, ease: "easeInOut" }}
+    viewport={{ once: true }}  className=" my-10">
+      <h1 className='h2 text-navy my-10'><TextAnimation01 text={'Our Capitals'}/> </h1>
       <div className="row">
         <Slider {...settings}>
           <div className="col-lg-4">
@@ -143,7 +148,7 @@ const Capslider = () => {
           {/* Add more cards as needed */}
         </Slider>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

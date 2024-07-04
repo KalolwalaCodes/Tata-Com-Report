@@ -300,37 +300,61 @@ const RiskManagement = () => {
           <div className="w-full md:w-[48%]  mr-2 ">
             <ul style={{ listStyle: "outside" }}>
               <li>
-              Adequate security measures have been put in place to protect the Company from cyber threats and such security measures are monitored periodically.
+                Adequate security measures have been put in place to protect the
+                Company from cyber threats and such security measures are
+                monitored periodically.
               </li>
-              <li>Comprehensive privacy policy has been put in place, which outlines our commitment to ensure compliance with applicable privacy laws and describes how we collect, use, disclose and protect personal data.</li>
               <li>
-              Internal privacy framework is in place ensuring alignment with the provisions of the Digital Personal Data Protection Act, 2023.
+                Comprehensive privacy policy has been put in place, which
+                outlines our commitment to ensure compliance with applicable
+                privacy laws and describes how we collect, use, disclose and
+                protect personal data.
+              </li>
+              <li>
+                Internal privacy framework is in place ensuring alignment with
+                the provisions of the Digital Personal Data Protection Act,
+                2023.
               </li>
             </ul>
           </div>
           <div className="w-full h-[10px] bg-pink-800 my-5"></div>
           <div className="w-full md:w-[48%] ">
             <h4 className="font-semibold text-blue my-5 text-xl mt-0">
-            Human resource risk
+              Human resource risk
             </h4>
             <p>
-            In today’s fast-changing digital landscape, having a skilled workforce is crucial for success. Failing to retain or attract talent with specialized skills can hinder growth. Upskilling and reskilling are vital to adapt to rapid transformations. A shortage of experienced professionals may impact business, while high attrition rates pose additional risks. 
+              In today’s fast-changing digital landscape, having a skilled
+              workforce is crucial for success. Failing to retain or attract
+              talent with specialized skills can hinder growth. Upskilling and
+              reskilling are vital to adapt to rapid transformations. A shortage
+              of experienced professionals may impact business, while high
+              attrition rates pose additional risks.
             </p>
           </div>
           <div className="w-full md:w-[48%]  mr-2 ">
             <ul style={{ listStyle: "outside" }}>
               <li>
-              Creating a supportive atmosphere for both personal and professional growth.
-              </li>
-              <li>Emphasising hiring highly skilled professionals for specialised roles. This gives us a competitive advantage and ensures our workforce is future-ready.</li>
-              <li>
-              Designing policies that prioritize the needs of our employees, offering equal opportunities and fostering inclusivity and diversity.
+                Creating a supportive atmosphere for both personal and
+                professional growth.
               </li>
               <li>
-              We offer numerous chances for learning and development to empower our employees and keep them engaged.
+                Emphasising hiring highly skilled professionals for specialised
+                roles. This gives us a competitive advantage and ensures our
+                workforce is future-ready.
               </li>
               <li>
-              Lower attrition rates and cultivate a diverse talent pool for future success.              </li>
+                Designing policies that prioritize the needs of our employees,
+                offering equal opportunities and fostering inclusivity and
+                diversity.
+              </li>
+              <li>
+                We offer numerous chances for learning and development to
+                empower our employees and keep them engaged.
+              </li>
+              <li>
+                Lower attrition rates and cultivate a diverse talent pool for
+                future success.{" "}
+              </li>
             </ul>
           </div>
         </div>

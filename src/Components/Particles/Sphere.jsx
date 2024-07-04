@@ -1,6 +1,7 @@
 import React, { useRef } from 'react';
 import { Canvas, useFrame } from '@react-three/fiber';
 import * as THREE from 'three';
+import { motion } from 'framer-motion';
 
 const Particle = ({ position }) => {
   return (
@@ -55,10 +56,13 @@ const Scene = () => {
 
 export default function Sphere() {
   return (
-    <div style={{ width:"100%", backgroundColor: 'transparent' }}>
+    <motion.div initial={{opacity:0}}
+    whileInView={{opacity:1}}
+    transition={{ duration: 0.6, ease: "easeInOut" }}
+    viewport={{ once: true }} style={{ width:"100%", backgroundColor: 'transparent' }}>
       <Canvas className='canvas-sphere' >
         <Scene />
       </Canvas>
-    </div>
+    </motion.div>
   );
 }

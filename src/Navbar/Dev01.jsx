@@ -1,8 +1,12 @@
 import React, { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { Link } from "react-router-dom";
-
-const DropDownTab = ({ name,links }) => {
+const dataLink={StatutoryReports:[['Notice','']
+,['Board’s Report',''],
+['Management Discussion and Analysis',''],
+['Corporate Governance Report','']
+],FinancialStatements:[[]]}
+const DropDownTab01 = ({ name,links }) => {
   console.log("here is name ", name);
   const dataSetOfDropdown = {
     "Integrated Report": ['Integrated Report', 'Message from MD and CEO',
@@ -90,14 +94,10 @@ const DropdownContent = ({ data }) => {
   '/Board-of-Directors'
   ]
   // Split the data into two halves
-  const midpoint = Math.ceil(data.length / 2);
-  const firstHalf = data.slice(1, midpoint);
-  const fristHalfLink=linksArray.slice(0, midpoint);
-  const secondHalf = data.slice(midpoint+1);
-  const SecondHalfLink=linksArray.slice(midpoint);
+  
   return (
     <div className="w-[400px] bg-white p-3 shadow-xl flex flex-wrap">
-      <div className="w-1/2 pr-3">
+      <div className="w-full p-3">
         {firstHalf.map((item, index) => (
           <div key={index} className="mb-3 space-y-3">
             <Link to={fristHalfLink[index]} className="block text-sm hover:underline font-bold text-blue-400 hover:text-blue-500">
@@ -106,19 +106,11 @@ const DropdownContent = ({ data }) => {
           </div>
         ))}
       </div>
-      <div className="w-1/2 pl-3">
-        {secondHalf.map((item, index) => (
-          <div key={index} className="mb-3 space-y-3">
-            <Link to={SecondHalfLink[index]} className="block text-sm hover:underline font-bold text-blue-400 hover:text-blue-500">
-              {item}
-            </Link>
-          </div>
-        ))}
-      </div>
+     
     </div>
   );
 };
 
 
 
-export default DropDownTab;
+export default DropDownTab01;
