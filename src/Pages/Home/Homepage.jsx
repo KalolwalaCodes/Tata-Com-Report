@@ -136,6 +136,7 @@ const Homepage = () => {
       {/* <FinancialCapital/>
     <MfdIntelCapital/>
     <NaturalCapital/> */}
+    <HumanCapital/>
     </div>
   );
 };
