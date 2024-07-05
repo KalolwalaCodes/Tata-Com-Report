@@ -143,12 +143,13 @@ canvas {
 
 .section002 {
   background: linear-gradient(to right, #874287, #5e4c85);
+  /* padding: 3%; */
 }
 
 .heading-tag-bigger {
   position: relative;
-  font-size: 90px;
-  line-height: 110px;
+  font-size: 85px;
+  line-height: 100px;
   color: white;
   /* -webkit-text-stroke: 2px #ffffff; */
 }
@@ -167,7 +168,7 @@ canvas {
   font-size: 50px;
   font-weight: 700;
   color: #f48221;
-  text-shadow: 2px 3px 2px rgb(69, 25, 94);
+  text-shadow: 1px 1px 1px rgb(69, 25, 94);
 
 }
 

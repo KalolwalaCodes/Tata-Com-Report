@@ -1,37 +1,22 @@
 import React, { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { Link } from "react-router-dom";
-const dataLink={StatutoryReports:[['Notice','']
-,['Board’s Report',''],
-['Management Discussion and Analysis',''],
-['Corporate Governance Report','']
-],FinancialStatements:[[]]}
-const DropDownTab01 = ({ name,links }) => {
+const dataLink={StatutoryReports:[['Notice','./Pdf/02. TATA Communication Notice_27.06.2024.pdf']
+,['Board’s Report','./Pdf/03. TATA Communication Board Report 27.06.24.pdf'],
+['Management Discussion and Analysis','/Pdf/04. TATA Communication -MDA- 27.06.2024.pdf'],
+['Corporate Governance Report','./Pdf/05. TATA Communication-CG_27.06.2024.pdf'],
+['BRSR','./Pdf/06. TATA Communication-BRSR- 24.06.2024 V1.pdf']
+]}
+const DropDownTab01 = ({ name }) => {
   console.log("here is name ", name);
-  const dataSetOfDropdown = {
-    "Integrated Report": ['Integrated Report', 'Message from MD and CEO',
-    'Year at a Glance',
-    'value creation model',
-    'Stakeholder engagement',
-    'Materiality assessment',
-    'Corporate details',
-    'Financial Capital',
-    'Manufactured and Intellectual Capital',
-    'Natural Capital',
-    'Human Capital',
-    'Social and Relationship Capital',
-    'Risk management',
-    'Governance',
-    'Board of Directors'],
-    "Statutory Reports": ['Statutory Reports', 'Notice', 'Board’s Report', 'Management Discussion and Analysis', 'Corporate Governance Report','BRSR'],
-    "Financial Statements": ['Financial Statements', 'dummyContent4', 'dummyContent4', 'dummyContent4', 'dummyContent4']
-  };
-  console.log("the data is ", dataSetOfDropdown[name][0], dataSetOfDropdown[name]);
+  console.log("here is name ss ", dataLink[name]);
+  
+ // console.log("the data is ", dataSetOfDropdown[name][0], dataSetOfDropdown[name]);
 
   return (
     <div className="flex h-[30px] justify-center px-3 align-middle z-20">
-      <FlyoutLink href="#" FlyoutContent={DropdownContent} data={dataSetOfDropdown[name]} links={links}>
-        {dataSetOfDropdown[name][0]}
+      <FlyoutLink href="#" FlyoutContent={DropdownContent} data={dataLink[name]}>
+        {'Statutory Reports'}
       </FlyoutLink>
     </div>
   );
@@ -77,34 +62,20 @@ const FlyoutLink = ({ children, href, FlyoutContent, data,links }) => {
 };
 
 const DropdownContent = ({ data }) => {
-  const linksArray=[
-    '/Message-from-MD-and-CEO',
-    'year-at-glance',
-    '/value-creation-model',
-    '/Stakeholder-engagement',
-    '/Materiality-assessment',
-    "/Corporate-details",
-    '/Financial-Capital',
-    '/Manufactured-and-Intellectual-Capital',
-    '/Natural-Capital',
-    '/human-capital',
-    '/Social-and-Relationship-Capital',
-    '/Risk-management',
-    '/Governance',
-  '/Board-of-Directors'
-  ]
+  console.log("here is data",data);
   // Split the data into two halves
   
   return (
     <div className="w-[400px] bg-white p-3 shadow-xl flex flex-wrap">
       <div className="w-full p-3">
-        {firstHalf.map((item, index) => (
+        {data.map((item, index) => (
           <div key={index} className="mb-3 space-y-3">
-            <Link to={fristHalfLink[index]} className="block text-sm hover:underline font-bold text-blue-400 hover:text-blue-500">
-              {item}
+            <Link target="_blank" to={data[index][1]} className="block text-sm hover:underline font-500 text-[rgb(20 68 107)] hover:text-blue-500">
+              {data[index][0]}
             </Link>
           </div>
         ))}
+        <Link target="_blank" to={"./Pdf/06. TATA Communication Standalone_Consolidated27.06.2024.pdf"} className="block text-sm hover:underline font-500 text-[rgb(20 68 107)] hover:text-blue-500 mb-3">Financial Statements</Link>
       </div>
      
     </div>

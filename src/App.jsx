@@ -17,6 +17,7 @@ import YearAtGlance from './Pages/Home/Smallpages/YearAtGlance';
 import Revolutionising from './Pages/Revolutionising/Revolutionising';
 // import Relationships from './Pages/Relationships/Relationships.jsx';
 import HumanCapital from './Pages/Capitals/HumanCapital';
+import SrCapital from './Pages/Capitals/SrCapital.jsx';
 
 function App() {
 
@@ -39,6 +40,7 @@ function App() {
      < Route path='/year-at-glance'  element={<YearAtGlance/>} />
      < Route path='/value-creation-model'  element={<Revolutionising/>} />
      < Route path='/human-capital'  element={<HumanCapital/>} />
+     < Route path='/Social-and-Relationship-Capital'  element={<SrCapital/>} />
      </Routes>
 <Footer/>
 </BrowserRouter>

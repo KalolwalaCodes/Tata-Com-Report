@@ -40,7 +40,7 @@ const Capslider = () => {
     whileInView={{x:0, opacity: 1 }}
     transition={{ duration: 0.6, ease: "easeInOut" }}
     viewport={{ once: true }}  className=" my-10">
-      <h1 className='h2 text-navy my-10'><TextAnimation01 text={'Our Capitals'}/> </h1>
+      <h1 className='h2 text-navy my-10'>Our Capitals </h1>
       <div className="row">
         <Slider {...settings}>
           <div className="col-lg-4">

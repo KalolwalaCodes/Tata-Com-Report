@@ -39,7 +39,7 @@ export const TextAnimation01 = ({ text }) => {
     <motion.span ref={ref} variants={textVariants} initial="hidden" animate={controls} >
       {text.split("").map((letter, index) => (
         <motion.span key={index} variants={letterVariants} style={{ display: "inline-block" }}>
-          {letter === " " ? "\u00A0" : letter}
+          {letter === ' ' ? "\u0020":letter  }
         </motion.span>
       ))}
     </motion.span>

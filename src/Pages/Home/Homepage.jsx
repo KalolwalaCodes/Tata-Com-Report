@@ -71,7 +71,7 @@ const Homepage = () => {
           whileInView={{ x: 0, opacity: 1 }}
           transition={{ duration: 0.6, ease: "easeInOut" }}
           viewport={{ once: true }} className="heading-tag-bigger  ">
-              We are Enabling the future of digital landscape
+              We are enabling the future of digital landscape
             </motion.h3>
             <motion.h3 initial={{ y: "100px", opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
@@ -108,7 +108,7 @@ const Homepage = () => {
       {/* *************************** */}
       <About />
       <div className="w-[86%] my-6  m-auto relative">
-        <h2 className="h2 text-navy my-5"><TextAnimation01 text={'Message from MD and CEO'}/>  </h2>
+        <h2 className="h2 text-navy my-5">Message from MD and CEO  </h2>
         <motion.img
         initial={{ scale:0.5, opacity: 0 }}
         whileInView={{scale:1, opacity: 1 }}
@@ -127,11 +127,11 @@ const Homepage = () => {
       </div>
       <div className="marginal">
         <h2 className="h2 text-navy mt-10 text-center">
-         <TextAnimation01 text={'Our performance highlights'} />
+        Our performance highlights
         </h2>
         <Performance />
         <Capslider />
-        <h2 className="h2 text-navy"><TextAnimation01 text={'Our stakeholders'}/> </h2>
+        <h2 className="h2 text-navy">Our stakeholders</h2>
       
         <Stakeholders />
         {/* *************************** */}

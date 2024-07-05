@@ -100,7 +100,7 @@ const DropdownContent = ({ data }) => {
       <div className="md:w-1/2 sm:w-full md:pr-3 sm:pr-0">
         {firstHalf.map((item, index) => (
           <div key={index} className="mb-3 space-y-3">
-            <Link to={fristHalfLink[index]} className="block text-sm hover:underline font-bold text-blue-400 hover:text-blue-500">
+            <Link to={fristHalfLink[index]} className="block text-sm hover:underline font-500 text-[rgb(20 68 107)] hover:text-blue-500">
               {item}
             </Link>
           </div>
@@ -109,7 +109,7 @@ const DropdownContent = ({ data }) => {
       <div className="md:w-1/2 sm:w-full md:pl-3 sm:pl-0">
         {secondHalf.map((item, index) => (
           <div key={index} className="mb-3 space-y-3">
-            <Link to={SecondHalfLink[index]} className="block text-sm hover:underline font-bold text-blue-400 hover:text-blue-500">
+            <Link to={SecondHalfLink[index]} className="block text-sm hover:underline font-500  text-[rgb(20 68 107)] hover:text-blue-500">
               {item}
             </Link>
           </div>

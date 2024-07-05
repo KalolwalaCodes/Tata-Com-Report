@@ -74,7 +74,7 @@
 
 .callouts {
   /* display: flex; */
-  width: 70%;
+  width: 100%;
   height: 100%;
   opacity: 0;
   text-align: left;
